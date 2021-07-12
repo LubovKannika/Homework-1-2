@@ -5,7 +5,12 @@
 //  Created by Lubov Kannika on 07.07.2021.
 //
 
+
 import UIKit
+
+enum CurrentLight {
+    case red, yellow, green
+}
 
 class ViewController: UIViewController {
 
