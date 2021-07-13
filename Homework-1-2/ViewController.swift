@@ -32,8 +32,9 @@ class ViewController: UIViewController {
         yellowLightLabel.alpha = lightIsOff
         greenLightLabel.alpha = lightIsOff
         
-        print("Размер стороны, доступный в методае viewDidLoad: \(redLightLabel.frame.height)")
+        print("Размер стороны, доступный в методе viewDidLoad: \(redLightLabel.frame.height)")
     }
+    
     
     override func viewWillLayoutSubviews() {
         redLightLabel.layer.cornerRadius = redLightLabel.frame.width / 2
@@ -42,8 +43,10 @@ class ViewController: UIViewController {
         
         print("Размер стороны, доступный в методае viewWillLayoutSubviews: \(redLightLabel.frame.height)")
     }
+ 
      
     @IBAction func startButtonPressed() {
+        
         if startButton.currentTitle == "START" {
             startButton.setTitle("NEXT", for: .normal)
         }
